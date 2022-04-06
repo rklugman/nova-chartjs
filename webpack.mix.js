@@ -1,6 +1,12 @@
-const mix = require('laravel-mix')
+let mix = require('laravel-mix')
 
-mix
+mix.js('resources/js/chart-js-integration.js', 'js').vue({ version: 3 })
+    .webpackConfig({
+        externals: {
+            vue: 'Vue',
+        },
+        output: {
+            uniqueName: 'vendor/chart-js-integration.jsr',
+        }
+    })
     .setPublicPath('dist')
-    .js('resources/js/chart-js-integration.js', 'js')
-    // .js('resources/js/nova-apex-chart.js', 'js')
