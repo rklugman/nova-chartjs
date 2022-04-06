@@ -16,11 +16,11 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "chart.js": "^2.9.4",
+        "chart.js": "^3.0",
         "chartjs-plugin-datalabels": "^0.7.0",
         "serialize-javascript": "^4.0.0",
         "sweetalert2": "^9.17.1",
         "vue": "^3.0",
-        "vue-chartjs": "^3.5.0"
+        "vue-chartjs": "^4.0"
     }
 }
